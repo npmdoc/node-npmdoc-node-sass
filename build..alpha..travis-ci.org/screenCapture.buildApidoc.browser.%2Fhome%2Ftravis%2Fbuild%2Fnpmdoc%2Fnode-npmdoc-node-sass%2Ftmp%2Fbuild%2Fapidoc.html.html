@@ -1,0 +1,708 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/sass/node-sass">node-sass (v4.5.2)</a>
+</h1>
+<h4>Wrapper around libsass</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-sass">module node-sass</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-sass.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-sass.</span>extensions</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-sass.errors">module node-sass.errors</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.errors.missingBinary">
+            function <span class="apidocSignatureSpan">node-sass.errors.</span>missingBinary
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.errors.unsupportedEnvironment">
+            function <span class="apidocSignatureSpan">node-sass.errors.</span>unsupportedEnvironment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-sass.extensions">module node-sass.extensions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getBinaryCachePath">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryCachePath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getBinaryName">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getBinaryPath">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getBinaryUrl">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryUrl
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getCachePathCandidates">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getCachePathCandidates
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getCachedBinary">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getCachedBinary
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getHumanEnvironment">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getHumanEnvironment
+            <span class="apidocSignatureSpan">(env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getInstalledBinaries">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getInstalledBinaries
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.getVersionInfo">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>getVersionInfo
+            <span class="apidocSignatureSpan">(binding)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.hasBinary">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>hasBinary
+            <span class="apidocSignatureSpan">(binaryPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-sass.extensions.isSupportedEnvironment">
+            function <span class="apidocSignatureSpan">node-sass.extensions.</span>isSupportedEnvironment
+            <span class="apidocSignatureSpan">(platform, arch, abi)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-sass" id="apidoc.module.node-sass">module node-sass</a></h1>
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-sass.errors" id="apidoc.module.node-sass.errors">module node-sass.errors</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.errors.missingBinary" id="apidoc.element.node-sass.errors.missingBinary">
+        function <span class="apidocSignatureSpan">node-sass.errors.</span>missingBinary
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">missingBinary = function () {
+  return [
+    'Missing binding ' + sass.getBinaryPath(),
+    'Node Sass could not find a binding for your current environment: ' + humanEnvironment(),
+    '',
+    foundBinaries(),
+    '',
+    missingBinaryFooter(),
+  ].join('\n');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Require binding
+ */
+module.exports = function(ext) {
+  if (!ext.hasBinary(ext.getBinaryPath())) {
+    if (!ext.isSupportedEnvironment()) {
+      throw new Error(errors.unsupportedEnvironment());
+    } else {
+      throw new Error(errors.<span class="apidocCodeKeywordSpan">missingBinary</span>());
+    }
+  }
+
+  return require(ext.getBinaryPath());
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.errors.unsupportedEnvironment" id="apidoc.element.node-sass.errors.unsupportedEnvironment">
+        function <span class="apidocSignatureSpan">node-sass.errors.</span>unsupportedEnvironment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unsupportedEnvironment = function () {
+  return [
+    'Node Sass does not yet support your current environment: ' + humanEnvironment(),
+    'For more information on which environments are supported please see:',
+    'https://github.com/sass/node-sass/releases/tag/v' + pkg.version
+  ].join('\n');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+ * Require binding
+ */
+module.exports = function(ext) {
+  if (!ext.hasBinary(ext.getBinaryPath())) {
+    if (!ext.isSupportedEnvironment()) {
+      throw new Error(errors.<span class="apidocCodeKeywordSpan">unsupportedEnvironment</span>());
+    } else {
+      throw new Error(errors.missingBinary());
+    }
+  }
+
+  return require(ext.getBinaryPath());
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-sass.extensions" id="apidoc.module.node-sass.extensions">module node-sass.extensions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getBinaryCachePath" id="apidoc.element.node-sass.extensions.getBinaryCachePath">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryCachePath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBinaryCachePath() {
+  var i,
+    cachePath,
+    cachePathCandidates = getCachePathCandidates();
+
+  for (i = 0; i &lt; cachePathCandidates.length; i++) {
+    cachePath = path.join(cachePathCandidates[i], pkg.name, pkg.version);
+
+    try {
+      mkdir.sync(cachePath);
+      return cachePath;
+    } catch (e) {
+      // Directory is not writable, try another
+    }
+  }
+
+  return '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function checkAndDownloadBinary() {
+if (process.env.SKIP_SASS_BINARY_DOWNLOAD_FOR_CI) {
+  console.log('Skipping downloading binaries on CI builds');
+  return;
+}
+
+var cachedBinary = sass.getCachedBinary(),
+  cachePath = sass.<span class="apidocCodeKeywordSpan">getBinaryCachePath</span>(),
+  binaryPath = sass.getBinaryPath();
+
+if (sass.hasBinary(binaryPath)) {
+  console.log('node-sass build', 'Binary found at', binaryPath);
+  return;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getBinaryName" id="apidoc.element.node-sass.extensions.getBinaryName">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBinaryName() {
+  var binaryName,
+    variant,
+    platform = process.platform;
+
+  if (getArgument('--sass-binary-name')) {
+    binaryName = getArgument('--sass-binary-name');
+  } else if (process.env.SASS_BINARY_NAME) {
+    binaryName = process.env.SASS_BINARY_NAME;
+  } else if (process.env.npm_config_sass_binary_name) {
+    binaryName = process.env.npm_config_sass_binary_name;
+  } else if (pkg.nodeSassConfig &amp;&amp; pkg.nodeSassConfig.binaryName) {
+    binaryName = pkg.nodeSassConfig.binaryName;
+  } else {
+    variant = getPlatformVariant();
+    if (variant) {
+      platform += '_' + variant;
+    }
+
+    binaryName = [
+      platform, '-',
+      process.arch, '-',
+      process.versions.modules
+    ].join('');
+  }
+
+  return [binaryName, 'binding.node'].join('_');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * node-sass: lib/errors.js
+ */
+
+var sass = require('./extensions'),
+pkg = require('../package.json');
+
+function humanEnvironment() {
+return sass.getHumanEnvironment(sass.<span class="apidocCodeKeywordSpan">getBinaryName</span>());
+}
+
+function foundBinaries() {
+return [
+  'Found bindings for the following environments:',
+  foundBinariesList(),
+].join('\n');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getBinaryPath" id="apidoc.element.node-sass.extensions.getBinaryPath">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBinaryPath() {
+  var binaryPath;
+
+  if (getArgument('--sass-binary-path')) {
+    binaryPath = getArgument('--sass-binary-path');
+  } else if (process.env.SASS_BINARY_PATH) {
+    binaryPath = process.env.SASS_BINARY_PATH;
+  } else if (process.env.npm_config_sass_binary_path) {
+    binaryPath = process.env.npm_config_sass_binary_path;
+  } else if (pkg.nodeSassConfig &amp;&amp; pkg.nodeSassConfig.binaryPath) {
+    binaryPath = pkg.nodeSassConfig.binaryPath;
+  } else {
+    binaryPath = path.join(defaultBinaryPath, getBinaryName().replace(/_(?=binding\.node)/, '/'));
+  }
+
+  return binaryPath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var errors = require('./errors');
+
+/**
+ * Require binding
+ */
+module.exports = function(ext) {
+if (!ext.hasBinary(ext.<span class="apidocCodeKeywordSpan">getBinaryPath</span>())) {
+  if (!ext.isSupportedEnvironment()) {
+    throw new Error(errors.unsupportedEnvironment());
+  } else {
+    throw new Error(errors.missingBinary());
+  }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getBinaryUrl" id="apidoc.element.node-sass.extensions.getBinaryUrl">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getBinaryUrl
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBinaryUrl() {
+  var site = getArgument('--sass-binary-site') ||
+             process.env.SASS_BINARY_SITE  ||
+             process.env.npm_config_sass_binary_site ||
+             (pkg.nodeSassConfig &amp;&amp; pkg.nodeSassConfig.binarySite) ||
+             'https://github.com/sass/node-sass/releases/download';
+
+  return [site, 'v' + pkg.version, getBinaryName()].join('/');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  if (cachedBinary) {
+console.log('Cached binary found at', cachedBinary);
+fs.createReadStream(cachedBinary).pipe(fs.createWriteStream(binaryPath));
+return;
+  }
+
+  download(sass.<span class="apidocCodeKeywordSpan">getBinaryUrl</span>(), binaryPath, function(err) {
+if (err) {
+  console.error(err);
+  return;
+}
+
+console.log('Binary saved to', binaryPath);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getCachePathCandidates" id="apidoc.element.node-sass.extensions.getCachePathCandidates">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getCachePathCandidates
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCachePathCandidates() {
+  return [
+    process.env.npm_config_sass_binary_cache,
+    process.env.npm_config_cache,
+  ].filter(function(_) { return _; });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getCachedBinary" id="apidoc.element.node-sass.extensions.getCachedBinary">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getCachedBinary
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCachedBinary() {
+  var i,
+    cachePath,
+    cacheBinary,
+    cachePathCandidates = getCachePathCandidates(),
+    binaryName = getBinaryName();
+
+  for (i = 0; i &lt; cachePathCandidates.length; i++) {
+    cachePath = path.join(cachePathCandidates[i], pkg.name, pkg.version);
+    cacheBinary = path.join(cachePath, binaryName);
+
+    if (fs.existsSync(cacheBinary)) {
+      return cacheBinary;
+    }
+  }
+
+  return '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function checkAndDownloadBinary() {
+if (process.env.SKIP_SASS_BINARY_DOWNLOAD_FOR_CI) {
+  console.log('Skipping downloading binaries on CI builds');
+  return;
+}
+
+var cachedBinary = sass.<span class="apidocCodeKeywordSpan">getCachedBinary</span>(),
+  cachePath = sass.getBinaryCachePath(),
+  binaryPath = sass.getBinaryPath();
+
+if (sass.hasBinary(binaryPath)) {
+  console.log('node-sass build', 'Binary found at', binaryPath);
+  return;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getHumanEnvironment" id="apidoc.element.node-sass.extensions.getHumanEnvironment">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getHumanEnvironment
+        <span class="apidocSignatureSpan">(env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getHumanEnvironment(env) {
+  var binding = env.replace(/_binding\.node$/, ''),
+    parts = binding.split('-'),
+    platform = getHumanPlatform(parts[0]),
+    arch = getHumanArchitecture(parts[1]),
+    runtime = getHumanNodeVersion(parts[2]);
+
+  if (parts.length !== 3) {
+    return 'Unknown environment (' + binding + ')';
+  }
+
+  if (!platform) {
+    platform = 'Unsupported platform (' + parts[0] + ')';
+  }
+
+  if (!arch) {
+    arch = 'Unsupported architecture (' + parts[1] + ')';
+  }
+
+  if (!runtime) {
+    runtime = 'Unsupported runtime (' + parts[2] + ')';
+  }
+
+  return [
+    platform, arch, 'with', runtime,
+  ].join(' ');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * node-sass: lib/errors.js
+ */
+
+var sass = require('./extensions'),
+pkg = require('../package.json');
+
+function humanEnvironment() {
+return sass.<span class="apidocCodeKeywordSpan">getHumanEnvironment</span>(sass.getBinaryName());
+}
+
+function foundBinaries() {
+return [
+  'Found bindings for the following environments:',
+  foundBinariesList(),
+].join('\n');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getInstalledBinaries" id="apidoc.element.node-sass.extensions.getInstalledBinaries">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getInstalledBinaries
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getInstalledBinaries() {
+  return fs.readdirSync(defaultBinaryPath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return [
+  'Found bindings for the following environments:',
+  foundBinariesList(),
+].join('\n');
+}
+
+function foundBinariesList() {
+return sass.<span class="apidocCodeKeywordSpan">getInstalledBinaries</span>().map(function(env) {
+  return '  - ' + sass.getHumanEnvironment(env);
+}).join('\n');
+}
+
+function missingBinaryFooter() {
+return [
+  'This usually happens because your environment has changed since running `npm install`.',
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.getVersionInfo" id="apidoc.element.node-sass.extensions.getVersionInfo">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>getVersionInfo
+        <span class="apidocSignatureSpan">(binding)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getVersionInfo(binding) {
+  return [
+    ['node-sass', pkg.version, '(Wrapper)', '[JavaScript]'].join('\t'),
+    ['libsass  ', binding.libsassVersion(), '(Sass Compiler)', '[C/C++]'].join('\t'),
+  ].join(eol);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.hasBinary" id="apidoc.element.node-sass.extensions.hasBinary">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>hasBinary
+        <span class="apidocSignatureSpan">(binaryPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hasBinary(binaryPath) {
+  return fs.existsSync(binaryPath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var errors = require('./errors');
+
+/**
+ * Require binding
+ */
+module.exports = function(ext) {
+if (!ext.<span class="apidocCodeKeywordSpan">hasBinary</span>(ext.getBinaryPath())) {
+  if (!ext.isSupportedEnvironment()) {
+    throw new Error(errors.unsupportedEnvironment());
+  } else {
+    throw new Error(errors.missingBinary());
+  }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-sass.extensions.isSupportedEnvironment" id="apidoc.element.node-sass.extensions.isSupportedEnvironment">
+        function <span class="apidocSignatureSpan">node-sass.extensions.</span>isSupportedEnvironment
+        <span class="apidocSignatureSpan">(platform, arch, abi)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSupportedEnvironment(platform, arch, abi) {
+  return (
+    false !== getHumanPlatform(platform) &amp;&amp;
+    false !== getHumanArchitecture(arch) &amp;&amp;
+    false !== getHumanNodeVersion(abi)
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var errors = require('./errors');
+
+/**
+ * Require binding
+ */
+module.exports = function(ext) {
+if (!ext.hasBinary(ext.getBinaryPath())) {
+  if (!ext.<span class="apidocCodeKeywordSpan">isSupportedEnvironment</span>()) {
+    throw new Error(errors.unsupportedEnvironment());
+  } else {
+    throw new Error(errors.missingBinary());
+  }
+}
+
+return require(ext.getBinaryPath());
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
