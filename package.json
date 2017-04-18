@@ -1,1 +1,39 @@
-{     "devDependencies": {         "node-sass": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-node-sass",     "homepage": "https://github.com/npmdoc/node-npmdoc-node-sass",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-node-sass.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### api documentation for  [node-sass (v4.5.2)](https://github.com/sass/node-sass)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-sass.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-sass) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-sass.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-sass)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "node-sass": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-node-sass",
+    "keywords": [
+        "documentation",
+        "node-sass"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_node_sass.js",
+    "name": "npmdoc-node-sass",
+    "nameAlias": "npmdoc_node_sass",
+    "nameOriginal": "npmdoc-node-sass",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-node-sass.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.6"
+}
