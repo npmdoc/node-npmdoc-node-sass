@@ -1,6 +1,6 @@
 # npmdoc-node-sass
 
-#### api documentation for  [node-sass (v4.5.2)](https://github.com/sass/node-sass)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-sass.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-sass) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-sass.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-sass)
+#### basic api documentation for  [node-sass (v4.5.2)](https://github.com/sass/node-sass)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-sass.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-sass) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-sass.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-sass)
 
 #### Wrapper around libsass
 
